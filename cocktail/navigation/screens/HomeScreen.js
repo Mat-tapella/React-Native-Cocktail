@@ -42,13 +42,19 @@ export default function HomeScreen({ navigation }) {
 };
 
 const styles = StyleSheet.create({
-    card: {
+    container: {
         flex: 1,
-        flexDirection: 'column',
+        backgroundColor: '#fff',
+    },
+    listContainer: {
+        padding: 16,
+    },
+    card: {
+        flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#FFF',
-        margin: 10,
-        borderRadius: 10,
+        marginBottom: 16,
+        borderRadius: 8,
+        backgroundColor: '#fff',
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.25,
@@ -56,16 +62,20 @@ const styles = StyleSheet.create({
         elevation: 5,
     },
     image: {
-        width: '100%',
-        height: 200,
-        resizeMode: 'cover',
-        borderTopLeftRadius: 10,
-        borderTopRightRadius: 10,
+        width: 80,
+        height: 80,
+        borderRadius: 8,
+        marginRight: 16,
     },
-    title: {
-        fontSize: 20,
+    cardDetails: {
+        flex: 1,
+    },
+    cardTitle: {
+        fontSize: 18,
         fontWeight: 'bold',
-        textAlign: 'center',
-        marginVertical: 10,
+        marginBottom: 8,
+    },
+    cardCategory: {
+        fontSize: 16,
     },
 });

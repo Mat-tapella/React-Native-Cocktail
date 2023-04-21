@@ -5,7 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/RandomScreens';
-import SettingsScreen from './screens/AccountScreens';
+import CocktailListScreen from './screens/AccountScreens';
 
 const homeName = "Home";
 const randomName = "Random Cocktail";
@@ -45,7 +45,7 @@ function MainContainer() {
 
                 <Tab.Screen name={homeName} component={HomeScreen} />
                 <Tab.Screen name={randomName} component={DetailsScreen} />
-                <Tab.Screen name={accountName} component={SettingsScreen} />
+                <Tab.Screen name={accountName} component={CocktailListScreen} />
 
             </Tab.Navigator>
         </NavigationContainer>
